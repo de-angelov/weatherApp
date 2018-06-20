@@ -1,0 +1,29 @@
+<div fxLayout="column" class="wrapper">
+  <div fxFlex="15" fxLayoutAlign="center center">
+    <img src="https://www.weather2umbrella.com/wp-content/themes/w2u/image/svg/weather-icons/d12.svg" alt="">
+  </div>
+  <app-weather-report fxFlex="20" fxHide.lt-md [reportData]='reportData'></app-weather-report>
+  <div fxFlex="5" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlex="20"> </div>
+    <div fxHide.lt-md fxFlex="20" fxLayoutAlign="center">
+      <button [routerLink]="['/city']">Today</button>
+    </div>
+    <div fxHide.lt-md fxFlex="20" fxLayoutAlign="center">
+      <button>More</button>
+    </div>
+    <div fxHide.lt-md fxFlex="20"></div>
+  </div>
+  <div fxFlex="5"></div>
+  <div fxFlex="35" fxLayout="column">
+    <div class="forecastDay" fxFlex="20" fxLayout="row" fxLayoutAlign="space-around" *ngFor="let day of forcastData">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+          <h3> {{day.localDateTime}} {{day.description}} {{day.temperature}} C </h3>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="10" fxLayout="row" fxHide.gt-sm fxLayoutAlign="center center">
+    <div fxFlex="100" fxLayoutAlign="center">
+      <button [routerLink]="['/city']">Today</button>
+    </div>
+  </div>
+</div>

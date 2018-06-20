@@ -1,0 +1,18 @@
+<div fxLayout="row">
+  <div fxFlex="10"></div>
+  <div fxFlex="50" fxLayout="column" fxLayoutAlign="space-between stretch">
+    <div fxFlex="40">{{reportData.cityName}} </div>
+    <div fxFlex="30">{{reportData.localDateTime}}</div>
+    <div fxFlex="30">{{reportData.description}}</div>
+  </div>
+  <div fxFlex="30" fxLayoutAlign="end center">
+    <div >
+      <img src={{reportData.descriptionIcon}} alt=""> 
+    </div>
+  </div>
+  <div fxFlex="20" fxLayoutAlign="start center">
+    <div >
+      {{reportData.temperature}} C
+    </div>
+  </div>
+</div>

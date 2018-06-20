@@ -1,0 +1,21 @@
+.wrapper{
+    height:100vh;
+}
+
+img{
+    height: 100px;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border: 2px 2px 2px 2px blue;
+    box-shadow: 0px;
+}
+
+button:disabled{
+    color: darkgrey;
+    border: 2px 2px 2px 2px darkgrey;
+    box-shadow: 0px;
+
+}
