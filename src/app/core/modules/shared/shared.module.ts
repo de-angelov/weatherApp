@@ -6,7 +6,7 @@ import { WeatherReportSmallComponent } from '../../components/weather-report-sma
 import { WeatherService } from '../../services/weather/weather.service';
 import { DataStorageService } from '../../services/data-storage/data-storage.service';
 import { FlexLayoutModule, BREAKPOINTS, BREAKPOINT, DISABLE_DEFAULT_BREAKPOINTS, DEFAULT_BREAKPOINTS } from '@angular/flex-layout';
-console.log(DEFAULT_BREAKPOINTS);
+
 
 const MY_CUSTOM_BREAKPOINTS = [
   {
@@ -20,7 +20,7 @@ const MY_CUSTOM_BREAKPOINTS = [
     overlapping: true,
   }
 ];
-console.log(MY_CUSTOM_BREAKPOINTS);
+
 
 
 

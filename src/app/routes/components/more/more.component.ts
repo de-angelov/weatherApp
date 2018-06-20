@@ -20,7 +20,7 @@ export class MoreComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log('more', this.forcastData);
+
   }
 
 }

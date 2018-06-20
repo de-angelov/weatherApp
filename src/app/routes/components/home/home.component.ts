@@ -32,7 +32,6 @@ export class HomeComponent implements OnInit {
   private onSubmit(value) {
     this.weatherService.getCityWeather(value).subscribe(
       (res: any) => {
-        console.log(res);
         this.dataStorageService.setWeatherData(res);
         this.dataStorageService.setForecastData(res.forecast.forecastday);
         this.router.navigateByUrl('/city');},
